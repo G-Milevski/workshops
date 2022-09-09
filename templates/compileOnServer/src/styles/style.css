@@ -1,0 +1,68 @@
+@import '../partials/news-card/news-card.css';
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    background-color: #e6b8df;
+}
+
+.header {
+    padding-top: 50px;
+}
+
+.mobile-container {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+}
+
+.main {
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.button-primary {
+    background-color: #5D71DD;
+    color: white;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-primary_loading::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url(../asserts/Group.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    background-position: 0 100%;
+    cursor: pointer;
+}

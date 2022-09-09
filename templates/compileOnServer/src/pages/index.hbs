@@ -1,0 +1,18 @@
+---
+styles:
+    - '../styles/main.css'
+    - '../styles/baner.css'
+---
+
+{{!< mobile}}
+
+<main class="main">
+    <ul class="news-list">
+        {{#each posts}}
+            <li>
+                {{> 'news-card/news-card'}}
+            </li>
+        {{/each}}
+    </ul>
+    <button class="button-primary button-primary_loading">Показать еще 6</button>
+</main>
